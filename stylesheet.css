@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Libre Baskerville', serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    background-color: black;
+}
+
+header {
+    width: 1300px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+/* navbar */
+
+nav {
+    padding-top: 50px;
+}
+
+nav ul {
+    align-items: center;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 35px;
+}
+
+nav a {
+    color: rgb(144, 144, 144);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+/* landing */
+
+.landing {
+    margin: 60px auto 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-text {
+    margin-top: 120px;
+    margin-left: 15px;
+}
+
+.landingwrapper {
+    margin-left: 30px;
+}
+
+.landing h1, h2 {
+    color: white;
+} 
+
+.landing h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.landing h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5.8rem;
+    margin: 0;
+}
+
+.landing_buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.landing_buttons a{
+    margin-left: 25px;
+}
+
+/* universal button layout 1*/
+
+.button_layout1 button {
+    padding: 10px 40px;
+    border: solid 2px #1E54D0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: #1E54D0;
+}
+
+.button_layout1 button:hover {
+    background-color: #1E54D0;
+    color: white;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+/* universal button layout 2 */
+
+.button_layout2 button {
+    padding: 10px 40px;
+    border: solid 2px #1E54D0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    background-color: #1E54D0;
+    color: white;
+    
+}
+
+.button_layout2 button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #1E54D0;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
