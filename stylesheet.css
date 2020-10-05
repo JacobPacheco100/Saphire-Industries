@@ -18,7 +18,7 @@ a, li {
     text-decoration: none;
 }
 
-/* ====================================================================== */
+/* ================================= UNIVERSAL ===================================== */
 
 .wrapper {
     max-width: 1240px;
@@ -70,7 +70,7 @@ a, li {
     transition: .1s ease-in-out;
 }
 
-/* ====================================================================== */
+/* =================================== NAVBAR =================================== */
 
 .main-header {
     background-color: black;
@@ -82,7 +82,7 @@ a, li {
     justify-content: space-between;
 }
 
-.main-header h1, a {
+.main-header h1, .main-header a {
     color: white;
     line-height: 120px;
 }
@@ -111,7 +111,7 @@ a, li {
     transition: .1s ease-in-out;
 }
 
-/* ================================== RESPONIVE NAV ==================================== */
+/* ================================== NAV MEDIA QUERIES ==================================== */
 
 @media (max-width: 750px) {
     .main-nav {
@@ -174,7 +174,7 @@ a, li {
 
 }
 
-/* --------------------RESPONSIVE-------------------------- */
+/* -------------------- LANDING MEDIA QUERIES -------------------------- */
 
 @media (max-width: 1255px) {
     
@@ -211,7 +211,7 @@ a, li {
         margin-bottom: 0px;
     }
 
-    .title h1, h2 {
+    .title h1, .title h2 {
         line-height: 70px;
     }
 
@@ -229,7 +229,7 @@ a, li {
         height: 600px;
     }
 
-    .title h1,h2 {
+    .title h1, .title h2 {
         line-height: 60px;
     }
 
@@ -243,5 +243,47 @@ a, li {
 
 }
 
+/* ================================== SECTION 1 ==================================== */
 
+.cont-1 {
+    min-height: 650px;
+    width: 100%;
+}
+
+.tools-img {
+    max-width: 30%;
+    float: left;
+}
+
+.info-1 {
+    width: 70%;
+    float: right;
+}
+
+.info-1 h1 {
+    font-size: 8vh;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.info-1 p {
+    line-height: 2;
+    color: rgb(82, 82, 82);
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+.info-1 a {
+    color: rgb(82, 82, 82);
+    font-weight: 500;
+}
+
+.info-1 li {
+    margin: 25px 0;
+    background: url('IMG/bullet.jpg') no-repeat left center;
+    padding: 7px 10px 7px 40px;
+    list-style: none;
+    vertical-align: middle;
+}
 
