@@ -21,15 +21,60 @@ a, li {
 /* ====================================================================== */
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button1 {
+    padding: 10px 0;
+    font-weight: 500;
+    width: 150px;
+    
+    border: solid #2A64E9 2px;
+    color: #2A64E9;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button1:hover {
+    color: white;
+    background-color: #2A64E9;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.button2 {
+    padding: 10px 0;
+    font-weight: 500;
+    width: 150px;
+
+    border: solid #2A64E9 2px;
+    color: white;
+    background-color: #2A64E9;
+    font-weight: 600;
+}
+
+.button2:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+    
+    cursor: pointer;
+    transition: .1s ease-in-out;
 }
 
 /* ====================================================================== */
 
 .main-header {
     background-color: black;
-    min-height: 70px;
+    min-height: 120px;
 }
 
 .NavWrap {
@@ -39,7 +84,7 @@ a, li {
 
 .main-header h1, a {
     color: white;
-    line-height: 70px;
+    line-height: 120px;
 }
 
 .main-header ul {
@@ -55,6 +100,7 @@ a, li {
 .main-nav a{
     margin-left: 30px;
     font-size: .9rem;
+    font-weight: 500;
     color: rgb(200, 200, 200);
 }
 
@@ -65,6 +111,137 @@ a, li {
     transition: .1s ease-in-out;
 }
 
-/* ====================================================================== */
+/* ================================== RESPONIVE NAV ==================================== */
+
+@media (max-width: 750px) {
+    .main-nav {
+        display: none;
+    }
+
+    .NavWrap {
+        display: block;
+    }
+
+    .main-header h1 {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+/* ================================= LANDING ===================================== */
+
+.landing {
+    background-color: black;
+    height: 750px;
+}
+
+.LandWrap {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.land-img {
+    float: left;
+    width: 30%;
+    padding-right: 20px;
+}
+
+.title {
+    float: right;
+    color: white;
+    width: 70%;
+    line-height: 100px;
+}
+
+.title h1 {
+    text-align: right;
+    font-size: 10rem;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    text-align: right;
+    font-size: 6.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.title button{
+    margin-top: 20px;
+    margin-left: 30px;
+    float: right;
+
+}
+
+/* --------------------RESPONSIVE-------------------------- */
+
+@media (max-width: 1255px) {
+    
+    .land-img{
+        display: none;
+    }
+
+    .title {
+        float: unset;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .title h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .title h2 {
+        font-size: 6.5vw;
+        text-align: center;
+    }
+
+    .title button {
+        float: unset;
+        position: relative;
+        right: 0;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .title h1 {
+        margin-bottom: 0px;
+    }
+
+    .title h1, h2 {
+        line-height: 70px;
+    }
+
+    .title button {
+        display: block;
+        margin: 30px auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .landing {
+        height: 600px;
+    }
+
+    .title h1,h2 {
+        line-height: 60px;
+    }
+
+    .title h1 {
+        font-size: 5.5vh;
+    }
+
+    .title h2 {
+        font-size: 3.5vh;
+    }
+
+}
+
 
 
