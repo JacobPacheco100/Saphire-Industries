@@ -252,13 +252,8 @@ a, li {
 
 .tools-img {
     max-width: 30%;
-    float: left;
 }
 
-.info-1 {
-    width: 70%;
-    float: right;
-}
 
 .info-1 h1 {
     font-size: 8vh;
