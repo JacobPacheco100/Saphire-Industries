@@ -62,9 +62,9 @@ a, li {
 }
 
 .button2:hover {
-    border: solid #1f46a1 2px;
+    border: solid #133b97 2px;
     color: white;
-    background-color: #1f46a1;
+    background-color: #133b97;
     
     cursor: pointer;
     transition: .1s ease-in-out;
@@ -329,3 +329,25 @@ a, li {
     }
 }
 
+/* ==================================== SECTION 2 ================================= */
+
+.cont-2 {
+    background-color: black;
+    color: white;
+    height: 750px;
+}
+
+.info-2 {
+    width: 43vw;
+}
+
+.info-2 h1 {
+    font-size: 6vw;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+.info-2 h3 {
+    font-size: 1vw;
+    letter-spacing: 1.65vw;
+}
