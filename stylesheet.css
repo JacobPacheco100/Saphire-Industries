@@ -62,9 +62,9 @@ a, li {
 }
 
 .button2:hover {
-    color: black;
-    background-color: white;
-    border-color: white;
+    border: solid #1f46a1 2px;
+    color: white;
+    background-color: #1f46a1;
     
     cursor: pointer;
     transition: .1s ease-in-out;
@@ -246,14 +246,25 @@ a, li {
 /* ================================== SECTION 1 ==================================== */
 
 .cont-1 {
-    min-height: 650px;
+ 
     width: 100%;
+    display: flex;
 }
 
 .tools-img {
     max-width: 30%;
+    max-height: 30%;
 }
 
+.info-1 {
+    width: 70%;
+    padding: 120px 0;
+}
+
+.info-1-container {
+    width: 60%;
+    margin: 0 auto;
+}
 
 .info-1 h1 {
     font-size: 8vh;
@@ -275,10 +286,46 @@ a, li {
 }
 
 .info-1 li {
-    margin: 25px 0;
+    margin-top: 30px;
     background: url('IMG/bullet.jpg') no-repeat left center;
     padding: 7px 10px 7px 40px;
     list-style: none;
     vertical-align: middle;
+}
+
+/* --------------------------------------- */
+
+@media (max-width: 1500px) {
+    .info-1-container {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 1025px) {
+
+    .tools-img {
+        display: none;
+    }
+
+    .info-1 {
+        display: block;
+        padding: 0;
+        margin: 120px auto;
+    }
+
+    .info-1-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 580px) {
+    .info-1-container{
+        width: 100%;
+    }
+
+    .info-1 h1 {
+        text-transform: uppercase;
+    }
 }
 
