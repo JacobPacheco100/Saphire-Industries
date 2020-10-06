@@ -230,15 +230,20 @@ a, li {
     }
 
     .title h1, .title h2 {
-        line-height: 60px;
+        line-height: 50px;
     }
 
     .title h1 {
-        font-size: 5.5vh;
+        font-size: 6vh;
     }
 
     .title h2 {
-        font-size: 3.5vh;
+        font-size: 4vh;
+    }
+
+    .title button {
+        margin:20px auto;
+        width: 90%;
     }
 
 }
@@ -332,22 +337,100 @@ a, li {
 /* ==================================== SECTION 2 ================================= */
 
 .cont-2 {
-    background-color: black;
     color: white;
     height: 750px;
+    background:black url(IMG/WatchCollection.png) no-repeat;
+    background-size: 70%;
+    background-position-y: 50%;
+    background-position-x: 130%;
 }
 
 .info-2 {
     width: 43vw;
+    position: relative;
+    top: 430px;
 }
 
 .info-2 h1 {
     font-size: 6vw;
     font-family: 'Libre Baskerville', serif;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .info-2 h3 {
     font-size: 1vw;
     letter-spacing: 1.65vw;
 }
+
+.info-2 button {
+    width: 200px ;
+    padding: 12px 0;
+}
+
+/* -------------------- SECTION 2: MEDIA QUERIES --------------------------  */
+
+@media (max-width: 1255px) {
+    
+    .cont-2 {
+        background-size: 60%;
+        background-position-y: 30%;
+        background-position-x: 50%;
+    }
+    
+    .info-2 {
+        margin: 0 auto;
+        text-align: center;
+        top: 500px;
+    }
+
+    .info-2 button {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .cont-2 {
+
+        background-size: 70%;
+        background-position-y: 30%;
+        background-position-x: 50%;
+    }
+
+    .info-2 {
+        top: 450px;
+        
+    }
+}
+
+@media (max-width: 580px) {
+
+    .cont-2 {
+        background:black url(IMG/Watch2.png) no-repeat;
+        background-size: 70%;
+        background-position-y: 50%;
+        background-position-x: 50%;
+
+    }
+
+    .info-2 {
+        top: 500px;
+        text-shadow: 0px 10px 20px black;
+        width: unset;
+    }
+
+    .info-2 h1 {
+        font-size: 8.5vw;
+    }
+    
+    .info-2 h3 {
+        font-size: 2.2vw;
+        letter-spacing: 1.65vw;
+    
+}
+
+/* ==================================== SECTION 3 ====================================== */
+
+
